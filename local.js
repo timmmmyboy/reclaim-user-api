@@ -27,10 +27,10 @@ module.exports = {
   connections: {
     mysql: {
       adapter: 'sails-mysql',
-      host: '$MYSQL_PORT_3306_TCP_ADDR',
-      user: '$MYSQL_ENV_MYSQL_USER',
-      password: '$MYSQL_ENV_MYSQL_PASSWORD',
-      database: '$MYSQL_ENV_MYSQL_DATABASE',
+      host: process.env.MYSQL_PORT_3306_TCP_ADDR,
+      user: process.env.MYSQL_ENV_MYSQL_USER,
+      password: process.env.MYSQL_ENV_MYSQL_PASSWORD,
+      database: process.env.MYSQL_ENV_MYSQL_DATABASE,
       charset: 'utf8',
       collation: 'utf8_general_ci'
     }
@@ -39,7 +39,7 @@ module.exports = {
     connection: 'mysql'
   },
   session: {
-    secret: '$SAILS_SECRET'
+    secret: process.env.SAILS_SECRET
   },
   port: 80,
   environment: 'production',
