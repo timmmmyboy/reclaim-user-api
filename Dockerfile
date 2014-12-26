@@ -26,7 +26,7 @@ MAINTAINER Tim Owens <tim@reclaimhosting.com>
     WORKDIR /api/
 
 # Add local settings
-    ADD local.js config/local.js
+    ADD local.js /api/config/local.js
 
 # Install and Lift
     RUN npm install
