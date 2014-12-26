@@ -2,7 +2,7 @@ FROM dockerfile/nodejs
 MAINTAINER Tim Owens <tim@reclaimhosting.com>
 
 # Ports
-    EXPOSE 1337
+    EXPOSE 80
 
 # Grunt needs git
     RUN apt-get -y install git

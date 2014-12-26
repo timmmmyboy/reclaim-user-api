@@ -41,7 +41,7 @@ module.exports = {
   session: {
     secret: '' // Add your own SECRET string here
   },
-  port: 1337,
+  port: 80,
   environment: 'development',
   log: {
     level: 'info'
