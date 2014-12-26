@@ -42,8 +42,8 @@ module.exports = {
     secret: process.env.SAILS_SECRET
   },
   port: 80,
-  environment: 'production',
+  environment: 'development',
   log: {
-    level: 'info'
+    level: 'verbose'
   }
 };
