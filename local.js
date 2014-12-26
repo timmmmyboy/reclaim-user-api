@@ -39,10 +39,10 @@ module.exports = {
     connection: 'mysql'
   },
   session: {
-    secret: '' // Add your own SECRET string here
+    secret: '$SAILS_SECRET'
   },
   port: 80,
-  environment: 'development',
+  environment: 'production',
   log: {
     level: 'info'
   }
