@@ -28,9 +28,9 @@ module.exports = {
     mysql: {
       adapter: 'sails-mysql',
       host: '$MYSQL_PORT_3306_TCP_ADDR',
-      user: '$MYSQL_USER',
-      password: '$MYSQL_PASSWORD',
-      database: '$MYSQL_DATABASE',
+      user: '$MYSQL_ENV_MYSQL_USER',
+      password: '$MYSQL_ENV_MYSQL_PASSWORD',
+      database: '$MYSQL_ENV_MYSQL_DATABASE',
       charset: 'utf8',
       collation: 'utf8_general_ci'
     }
