@@ -16,6 +16,9 @@ MAINTAINER Tim Owens <tim@reclaimhosting.com>
 # Install Sails.js
     RUN npm install -g sails
 
+# Install pm2
+    RUN npm install -g pm2 --unsafe-perm
+
 # Create app directory
     RUN mkdir /api
 
@@ -30,4 +33,4 @@ MAINTAINER Tim Owens <tim@reclaimhosting.com>
 
 # Install and Lift
     RUN npm install
-    ENTRYPOINT ["sails", "lift"]
+    ENTRYPOINT ["pm2","start","app.js","--no-daemon"]
